@@ -21,7 +21,7 @@ function love.update()
       game_update()
       if tail_length <= 5 then
         interval = 20
-      elseif tail_length > 5 and tail_length <= 10 then
+      elseif tail_length > 5 and tail_length <= 10 then -- the game will run faster after every 6 collected apple
         interval = 15
       elseif tail_length > 10 and tail_length <= 15 then
         interval = 10
