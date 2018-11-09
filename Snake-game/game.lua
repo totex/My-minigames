@@ -99,12 +99,3 @@ function game_restart()
   state = GameStates.running
   add_apple()
 end
-
-
-
-
-
-
-
-
-
