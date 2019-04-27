@@ -24,7 +24,7 @@ def save_score(file, scr):
 
 def calculate_score(score):
     current_time = score
-    loaded_time = load_score("score.txt")
+    loaded_time = load_score("res/score.txt")
 
     current_minutes = current_time.split(":")[0]
     current_seconds = current_time.split(":")[1]
@@ -328,7 +328,7 @@ class WinningScene(cocos.scene.Scene):
         super().on_enter()
         self.score.element.text = Timer.current_time
         if calculate_score(Timer.current_time):
-            save_score("score.txt", Timer.current_time)
+            save_score("res/score.txt", Timer.current_time)
 
     def on_exit(self):
         super().on_exit()
