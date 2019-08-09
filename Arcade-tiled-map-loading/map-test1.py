@@ -13,7 +13,7 @@ class MyGameWindow(arcade.Window):
         self.setup()
 
     def setup(self):
-        my_map = arcade.read_tiled_map("my-map.tmx", 0.5)
+        my_map = arcade.read_tiled_map("my-map.tmx", 1) # this line creates the Warnings
 
         # self.ground_list = arcade.generate_sprites(my_map, "ground", 1)
 
